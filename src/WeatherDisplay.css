@@ -1,8 +1,9 @@
 .search-input {
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
+    width: 75%;
+    padding: 10px;    
     font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #333;
   }
   
 .weather-display {
@@ -26,3 +27,37 @@
     color: #666;
     font-size: 1.2em;
   } 
+
+  
+/* Component styles */
+.search-container {
+  max-width: 100%;
+  width: 75%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: auto;
+  padding: 20px 0;
+  
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #333;
+  cursor: pointer !important;
+  padding: 10px 0;
+  color: #f0f0f0;
+  width: 15%;
+  border-radius: 8px;
+  border: 1px solid #333;
+
+}
+
+.search-button:hover {
+background-color: #fff;
+color: #333;
+border: 1px solid #333;
+}
