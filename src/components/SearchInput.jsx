@@ -82,7 +82,7 @@ const SearchInput = () => {
         <PulseLoader
           loading={loading}
           color={"#fff"}
-          size={30}
+          size={20}
           aria-label="Loading Spinner"
           data-testid="loader"
         >
