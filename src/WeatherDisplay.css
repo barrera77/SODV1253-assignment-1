@@ -17,15 +17,26 @@
 }
 
 .weather-display .city {
-  margin: 0;
-  color: #333;
   font-size: 1.5em;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: start;
 }
 
-.weather-display .weather-info {
-  margin: 0;
+.weather-display .temp-info,
+.weather-info {
+  background-color: #fff !important;
   color: #666;
-  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 1.5rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 0.75px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 /* Component styles */
@@ -67,30 +78,12 @@
   margin: auto;
   gap: 1rem;
   padding: 10px;
-  background-color: #ff000020;
+  background-color: #ff000030;
 }
 
 .card-content {
   display: flex;
   justify-content: space-between;
-}
-
-.temp-info,
-.weather-info {
-  background-color: #fff !important;
-  border-radius: 8px;
-  padding: 1.5rem 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.city-info {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 .cards-wrapper {
@@ -104,8 +97,14 @@
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem;
   border: 1px solid #fff;
   border-radius: 8px;
   margin: 0.75rem auto;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #fff;
 }
